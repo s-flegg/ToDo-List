@@ -13,3 +13,7 @@ def add_task(task_list, title, description, due_date, priority):
         list: Updated task list with the new task added
     '''
     pass
+
+    # look here:  https://www.geeksforgeeks.org/python/add-a-column-to-existing-csv-file-in-python/
+
+
