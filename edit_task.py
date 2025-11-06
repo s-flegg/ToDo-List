@@ -7,7 +7,7 @@ def edit_task(task_list, title, new_title=None, description=None, due_date=None,
 
     Parameters:
         task_list (list): The list of all tasks
-        title (str) : Title of the task to be changed
+        title (str): Title of the task to be changed
         new_title (str or None): The new title of the task
         description (str or None): The task description
         due_date (object or None): The datetime.datetime that the task is due

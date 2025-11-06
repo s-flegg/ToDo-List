@@ -10,6 +10,7 @@ from get_date import get_date
 import sys
 
 def main():
+    """The main loop that runs the program."""
 
     task_list = load_list()
 
@@ -35,6 +36,7 @@ def main():
                         input("Enter the title of the task: "),
                         input("Enter the description of the task: "),
                         get_date(),
+                        input("Is the task completed? (Y/n) ") == "Y",
                         int(input("Please enter the priority level as a number 1-5: "))
                     )
                 case 2:
@@ -61,6 +63,7 @@ def main():
 
                     # used to remove anything the user doesn't want to change
                     kwargs = {
+                        "title": task,
                         "new_title": new_title,
                         "description": description,
                         "due_date": due_date,
@@ -69,7 +72,7 @@ def main():
                     }
                     kwargs = {k:v for k,v in kwargs.items() if v != ""}
 
-                    edit_task(**kwargs)
+                    edit_task(task_list, **kwargs)
 
                 case 3:
                     remove_task(task_list, input("Please enter the name of the task to be removed: "))
