@@ -72,18 +72,18 @@ def main():
                     edit_task(**kwargs)
 
                 case 3:
-                    remove_task()
+                    remove_task(task_list, input("Please enter the name of the task to be removed: "))
                 case 4:
-                    view_list()
+                    view_list(task_list)
                 case 5:
-                    sort_by()
+                    sort_by(task_list, input("What would you like to sort by (Title, Due Date, Priority): "))
                 case 6:
                     run = False
                     sys.exit()
         except:
             print("Oops, something went wrong. Please try again and ensure all your inputs are correct.")
 
-        save_list()
+        save_list(task_list)
 
 
 main()
