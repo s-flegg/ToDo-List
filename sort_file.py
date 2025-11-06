@@ -19,8 +19,8 @@ def sort_by(task_list, sort_by, ascending):
             if mylist[j][index] > mylist[j+1][index]:
                 mylist[j][index], mylist[j+1][index] = mylist[j+1][index], mylist[j][index]
                 swapped = True
-            if not swapped:
-                break
+        if not swapped:
+            break
     if ascending == False
         n = len(task_list)
         for i in range(n-1):
@@ -29,6 +29,6 @@ def sort_by(task_list, sort_by, ascending):
             if mylist[j][index] < mylist[j+1][index]:
                 mylist[j][index], mylist[j+1][index] = mylist[j+1][index], mylist[j][index]
                 swapped = True
-            if not swapped:
-                break
+        if not swapped:
+            break
     return task_list
