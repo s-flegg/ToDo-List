@@ -19,7 +19,7 @@ def main():
         try:
             choice = int(input("Would you like to: "
                                + "\n1) Add a task     2) Edit a task"
-                               + "\n2) Remove a task      4) View all tasks"
+                               + "\n3) Remove a task      4) View all tasks"
                                + "\n5) Sort the task list     6) Quit"
                                + "\n: "
                                )
